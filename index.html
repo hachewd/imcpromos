@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>imc Promos</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="main.css" rel="stylesheet">
+<script>
+$(document).ready(function(){
+	$('#promociones a').each(function(i,e){
+		$(e).click(function(){
+			$(this).next().toggle('slow');
+		});
+	});
+	$('#promocion_destacada a').each(function(i,e){
+		$(e).click(function(){
+			$(this).next().toggle('slow');
+		});
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+  <section id="promocion_destacada">
+    <article><a href="#"><span class="imagen"><img src="images/claro.png" alt="Claro" height="80"></span> <span class="detalle">
+      <h2>Gana un gimnasio y dale a papá el regalo que merece</h2>
+      <p>Arma tu plan a la medida y queda participando en la promoción.</p>
+      </span> </a>
+      <div class="share"> <strong>Compartir en redes sociales:</strong> <a href="#"><img src="images/facebook.png" width="40" alt="Facebook"></a> <a href="#"><img src="images/twitter.jpg" width="40" alt="Twitter"></a> </div>
+    </article>
+  </section>
+  <section id="promociones">
+    <article><a href="#"><span class="imagen"><img src="images/hamburguesa.png" alt="McDonald's" height="80"></span> <span class="detalle">
+      <h2>McDonald's BIGMAC por sólo 2500</h2>
+      <p>Descargue haciendo click al cupón de descuento</p>
+      </span> </a>
+      <div class="share"> <strong>Compartir en redes sociales:</strong> <a href="#"><img src="images/facebook.png" width="40" alt="Facebook"></a> <a href="#"><img src="images/twitter.jpg" width="40" alt="Twitter"></a> </div>
+    </article>
+    <article><a href="#"><span class="imagen"><img src="images/forever21.png" alt="Forever 21" height="80"></span><span class="detalle">
+      <h2>Todas las blusas a 7000</h2>
+      <p>Descargue el cupón de descuento y preséntelo al pagar para activar la promoción.</p>
+      </span></a>
+      <div class="share"> <strong>Compartir en redes sociales:</strong> <a href="#"><img src="images/facebook.png" width="40" alt="Facebook"></a> <a href="#"><img src="images/twitter.jpg" width="40" alt="Twitter"></a> </div>
+    </article>
+    <article><a href="#"><span class="imagen"><img src="images/chilis.png" alt="Chilis" height="80"></span><span class="detalle">
+      <h2>Bebida gratis con la compra de cualquier plato principal</h2>
+      <p>Mencione este anuncio para recibir su bebida gratuita. Promoción por tiempo limitado.</p>
+      </span></a>
+      <div class="share"> <strong>Compartir en redes sociales:</strong> <a href="#"><img src="images/facebook.png" width="40" alt="Facebook"></a> <a href="#"><img src="images/twitter.jpg" width="40" alt="Twitter"></a> </div>
+    </article>
+    <article><a href="#"><span class="imagen"><img src="images/pasta.png" alt="Chilis" height="80"></span><span class="detalle">
+      <h2>35 de descuento en tu almuerzo ejecutivo en Spoleto</h2>
+      <p>Descargue su cupón de descuento haciendo click aquí.</p>
+      </span></a>
+      <div class="share"> <strong>Compartir en redes sociales:</strong> <a href="#"><img src="images/facebook.png" width="40" alt="Facebook"></a> <a href="#"><img src="images/twitter.jpg" width="40" alt="Twitter"></a> </div>
+    </article>
+  </section>
+  <footer><img src="images/logo_imc.png" alt="imc Promos"></footer>
+</div>
+</body>
+</html>
